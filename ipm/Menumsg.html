@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Musica</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Balcao</title>
+	<script type="text/javascript" src="date_time.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+	body {
+		background-attachment: scroll;
+		background-image: url(Menumsg.png);
+		background-repeat: no-repeat;
+		background-position: left top;
+	}
+	</style>
+</head>
+<body>
+    <img id="msg_voltar_but"src="Voltar.png" onClick="window.location.href='Balcao.html'"/>
+    <img id="msg_ajuda_but" src="Ajuda.png" onClick="window.location.href='menu_ajuda7.html'"/>
+	<div id="text_kb">
+	<textarea id="write" maxlength="141" ></textarea> 
+    <ul id="keyboard">  
+        <li class="symbol"><span class="off">`</span><span class="on">~</span></li>  
+        <li class="symbol"><span class="off">1</span><span class="on">!</span></li>  
+        <li class="symbol"><span class="off">2</span><span class="on">@</span></li>  
+        <li class="symbol"><span class="off">3</span><span class="on">#</span></li>  
+        <li class="symbol"><span class="off">4</span><span class="on">$</span></li>  
+        <li class="symbol"><span class="off">5</span><span class="on">%</span></li>  
+        <li class="symbol"><span class="off">6</span><span class="on">^</span></li>  
+        <li class="symbol"><span class="off">7</span><span class="on">&amp;</span></li>  
+        <li class="symbol"><span class="off">8</span><span class="on">*</span></li>  
+        <li class="symbol"><span class="off">9</span><span class="on">(</span></li>  
+        <li class="symbol"><span class="off">0</span><span class="on">)</span></li>  
+        <li class="symbol"><span class="off">-</span><span class="on">_</span></li>  
+        <li class="symbol"><span class="off">=</span><span class="on">+</span></li>  
+        <li class="delete lastitem">delete</li>  
+        <li class="tab">tab</li>  
+        <li class="letter">q</li>  
+        <li class="letter">w</li>  
+        <li class="letter">e</li>  
+        <li class="letter">r</li>  
+        <li class="letter">t</li>  
+        <li class="letter">y</li>  
+        <li class="letter">u</li>  
+        <li class="letter">i</li>  
+        <li class="letter">o</li>  
+        <li class="letter">p</li>  
+        <li class="symbol"><span class="off">[</span><span class="on">{</span></li>  
+        <li class="symbol"><span class="off">]</span><span class="on">}</span></li>  
+        <li class="symbol lastitem"><span class="off">\</span><span class="on">|</span></li>  
+        <li class="capslock">caps lock</li>  
+        <li class="letter">a</li>  
+        <li class="letter">s</li>  
+        <li class="letter">d</li>  
+        <li class="letter">f</li>  
+        <li class="letter">g</li>  
+        <li class="letter">h</li>  
+        <li class="letter">j</li>  
+        <li class="letter">k</li>  
+        <li class="letter">l</li>  
+        <li class="symbol"><span class="off">;</span><span class="on">:</span></li>  
+        <li class="symbol"><span class="off">'</span><span class="on">&quot;</span></li>  
+        <li class="return lastitem">return</li>  
+        <li class="left-shift">shift</li>  
+        <li class="letter">z</li>  
+        <li class="letter">x</li>  
+        <li class="letter">c</li>  
+        <li class="letter">v</li>  
+        <li class="letter">b</li>  
+        <li class="letter">n</li>  
+        <li class="letter">m</li>  
+        <li class="symbol"><span class="off">,</span><span class="on">&lt;</span></li>  
+        <li class="symbol"><span class="off">.</span><span class="on">&gt;</span></li>  
+        <li class="symbol"><span class="off">/</span><span class="on">?</span></li> 
+        <li class="space lastitem">&nbsp;</li>  
+        <div id="msg_buts"> 
+            <img id="cor_preto" src="preto.png"/>
+            <img id="cor_vermelho" src="vermelho.png"/>
+            <img id="cor_verde" src="verde.png"/>
+            <img id="style_bold" src="bold.png"/>
+            <img id="style_italic" src="italic.png"/>
+            <img id="style_under" src="under.png"/>
+        </div>
+    </ul>
+</div>
+<div id="msg_confirm">
+<img id="sendMsg" src="Confirmar.png"/>
+<img id="msg_unkBut" src="Sair.png" onClick="window.location.href='index.html'"/>
+</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>  
+<script type="text/javascript" src="teclado.js"></script>  
+<script type="text/javascript">
+$(function() {
+    var bold = false;
+    var italic = false;
+    var underline = false;
+
+    $("#sendMsg").click(function() {
+        if (!$.trim($("#write").val())) {
+            alert("mensagem vazia!");
+            return false;
+        }
+        window.location.href='confi_msg.html';
+    });
+
+    function resetButtons(){
+        $("#cor_preto").attr("src", "preto.png");
+        $("#cor_vermelho").attr("src", "vermelho.png");
+        $("#cor_verde").attr("src", "verde.png");
+    }
+    $("#cor_preto").click(function() {
+        $("#write").css("color", "black");
+        resetButtons();
+        $("#cor_preto").attr("src", "preto_hoover.png");
+    });
+    $("#cor_vermelho").click(function() {
+        $("#write").css("color", "red");
+        resetButtons();
+        $("#cor_vermelho").attr("src", "vermelho_hoover.png");
+    });
+    $("#cor_verde").click(function() {
+        $("#write").css("color", "green");
+        resetButtons();
+        $("#cor_verde").attr("src", "verde_hoover.png");
+    });
+    $("#style_bold").click(function() {
+        if (bold==false) {
+            $("#write").css("font-weight", "bold");
+            bold=true;
+            $("#style_bold").attr("src", "bold_hoover.png");
+        } else {
+            $("#write").css("font-weight", "normal");
+            bold=false;
+            $("#style_bold").attr("src", "bold.png");
+        }
+    });
+    $("#style_italic").click(function() {
+        if (italic==false) {
+            $("#write").css("font-style", "italic");
+            italic=true;
+            $("#style_italic").attr("src", "italic_hoover.png");
+        } else {
+            $("#write").css("font-style", "normal");
+            italic=false;
+            $("#style_italic").attr("src", "italic.png");
+        }
+    });
+    $("#style_under").click(function() {
+        if (underline==false) {
+            $("#write").css("text-decoration", "underline");
+            underline=true;
+            $("#style_under").attr("src", "under_hoover.png");
+        } else {
+            $("#write").css("text-decoration", "none");
+            underline=false;
+            $("#style_under").attr("src", "under.png");
+        }
+    });
+});
+</script> 
+<div>
+<span id="date_time_msg"></span>
+</div>
+<script type="text/javascript">
+    window.onload = date_time('date_time_msg');
+</script>
+</body>  
+</html>  
+</body
+></html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Balcao</title>
+    <script type="text/javascript" src="jquery-2.0.2.min.js"></script>  
+    <script type="text/javascript" src="countdown.js"></script>  
+    <script type="text/javascript" src="balcao.js"></script>
+    <script type="text/javascript" src="date_time.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+	body {
+		background-attachment: scroll;
+		background-image: url(Balcao.png);
+		background-repeat: no-repeat;
+		background-position: left top;
+	}
+	</style>
+</head>
+<body>
+	<header>
+        <div id="price" class="whitetext1">
+            <span>0</span> €
+        </div>
+	</header>
+	<nav>
+		<div id="left_menu">
+			<img src="music.png" onClick="window.location.href='musica.html'"/>
+			<div class="clear"/>
+	  		<img src="Mensagem.png" onClick="window.location.href='Menumsg.html'"/>
+	  		<div class="clear"/>
+			<img src="history.png" onClick="window.location.href='menu_func.html'"/>
+			<div class="clear"/>
+			<img src="statics.png" onClick="window.location.href='menu_func.html'"/>
+			<div class="clear"/>
+			<img src="definition.png" onClick="window.location.href='menu_func.html'"/>
+		<div>
+    </nav>
+    <section1>
+    	<div id="mini_buts">
+    		<img data-drink="MangoMagnifico_Bottle_MockUp" src="Botao-mini.png"/>
+    		<img data-drink="Cola" src="Botao-mini.png"/>
+    		<img data-drink="bottle-vs" src="Botao-mini.png"/>
+    		<img data-drink="Biliner_Sauerbrunn_bottle_1,5litre_1890" src="Botao-mini.png"/>
+    		<img data-drink="Bottle_of_Duff_2" src="Botao-mini.png"/>
+    	</div>
+    	<div id="bebida">
+    		<img width="89"  height="272" />
+    	</div><span class="whitetext2" id="cnt"></span>
+    	<div id="controlos">
+            <div style="height: 45px;">
+	    	<img id="remNo" src="Menos.png"/>
+            <div id="drinkNo" class="whitetext">0</div>
+	    	<img id="addNo" src="Mais.png"/>
+            </div>
+	    	<div id="confirm">
+    			<img id="confirm_but" src="Confirmar.png"/>
+    		</div>
+    	</div>
+    </section1>
+    <aside>
+    	<div id="right_menu">
+			<img src="Ajuda.png" onClick="window.location.href='menu_ajuda.html'"/>
+			<div class="clear"/>
+			<img src="Botao_bebida.png" onClick="window.location.href='Bebidas.html'"/>
+      		<div class="clear"/>
+      		<img id="empregado_but" src="Empregado.png" onClick="window.location.href='menu_empregado.html'"/>
+      		<div class="clear"/>
+      		<img id="exit_but" src="Sair.png"/>
+      		<div class="clear"/>
+		 </div>
+	</aside>
+	<footer>
+		<span id="date_time"></span>
+        <script type="text/javascript">
+        	window.onload = date_time('date_time');
+       	</script>
+	</footer>
+</body>
+</html>

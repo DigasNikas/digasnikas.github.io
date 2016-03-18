@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Musica</title>
+	<script type="text/javascript" src="date_time.js"></script>
+    <script type="text/javascript" src="jquery-2.0.2.min.js"></script>  
+    <script type="text/javascript" src="countdown.js"></script>
+    <script type="text/javascript" src="musica.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+	body {
+		background-attachment: scroll;
+		background-image: url(musica.png);
+		background-repeat: no-repeat;
+		background-position: left top;
+	}
+	</style>
+</head>
+<body>
+<img id="msg_voltar_but"src="Voltar.png" onClick="window.location.href='Balcao.html'"/>
+<img id="msg_ajuda_but" src="Ajuda.png" onClick="window.location.href='menu_ajuda1.html'"/>
+<div id="musica_div">
+</span>
+    <div id="playing" class="whitetext">A tocar: <span>-- -- -- -- --</span><span style="margin-left:90px;" id="cnt">60</span> sec </div>
+    <div id="vote_buts" style="float:left;display:inline-block;" class="whitetext">
+		<p></p>
+        <span data-id="1">Rehab - Amy Winehouse</span>
+        <div class="goRight" style="top: 453px;">
+            <img data-id="1" src="votar.png" />
+            Votos: <div class="votes" data-id="1">0</div>
+        </div>
+        <br />
+
+        <span data-id="2">Bohemian Rhapsody - Queen</span>
+        <div class="goRight" style="top: 500px;">
+            <img data-id="2" src="votar.png" />
+            Votos: <div class="votes" data-id="2">0</div>
+        </div>
+        <br />
+
+        <span data-id="3">Wrecking Ball - Miley Cyrus</span>
+        <div class="goRight" style="top: 548px;">
+            <img data-id="3" src="votar.png" />
+            Votos: <div class="votes" data-id="3">0</div>
+        </div>
+        <br />
+    </div>
+</div>
+<section>
+</section>
+<div style="margin-top:280px; margin-left:950px;">
+<img src="Sair.png" onClick="window.location.href='index.html'"/>
+</div>
+<div style="margin-top:29px;">
+<span id="date_time_msg"></span>
+</div>
+<script type="text/javascript">
+    window.onload = date_time('date_time_msg');
+</script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+</style>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>StackInflow - The InfoVis Edition</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href='css/OpenSansFont.css' rel='stylesheet' type='text/css'>
+    <link href='css/RalewayFont.css' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/awsome-bootstrap-textbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <script src="vendor\jquery-2.1.4.min.js" type="text/javascript"></script>
+
+    <!-- D3.js -->
+    <script src="d3/d3.min.js" charset="utf-8"></script>
+    <script src="d3/d3.geo.projection.v0.min.js" charset="utf-8"></script>
+    <link href="d3-geomap\css\d3.geomap.css" rel="stylesheet">
+    <script src="d3-geomap\vendor\d3.geomap.dependencies.min.js"></script>
+    <script src="d3-geomap\js\d3.geomap.js" type="text/javascript"></script>
+
+    
+
+</head>
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">StackInflow InfoVis Edition</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#intro"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#radar">Overall View</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#scatter">Spatial View</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row" id="intro">
+                <div class="col-lg-12">
+                    <img src="so-logo.png">
+                    
+                </div>
+                <p>Welcome to StackInflow Infovis Edition.</p>
+                <p>In this web space you can discover more about 
+                StackOverflow through a good visualization of the data
+                gathered by StackExchange.</p>
+                <a class="btn btn-default page-scroll" href="#radar">Lets check it out!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="radar" class="about-section">
+            <div class="row" id="radar">
+                <div class="col-xs-1 radarForm dashboard">
+                    <h4>Tags Filter</h4>
+                    <form role="form">
+                        <div class="checkbox checkbox-tag1 tagCheckbox" id="checkbox1">
+                            <input type="checkbox" name="tag" class="styled" value="c#" checked onclick="updateTag('c#')">
+                            <label for="checkbox1"> C#</label>
+                        </div>
+                        <div class="checkbox checkbox-tag2 tagCheckbox" id="checkbox2">
+                            <input type="checkbox" name="tag" value="android" checked onclick="updateTag('android')">
+                            <label for="checkbox2"> Android</label>
+                        </div>
+                        <div class="checkbox checkbox-tag3 tagCheckbox" id="checkbox3">
+                            <input type="checkbox" name="tag" value="sql" checked onclick="updateTag('mysql')">
+                            <label for="checkbox3"> MySQL</label>
+                        </div>
+                        <div class="checkbox checkbox-tag4 tagCheckbox" id="checkbox4">
+                            <input type="checkbox" name="tag" value="javascript" onclick="updateTag('javascript')">
+                            <label for="checkbox4"> JavaScript</label>
+                        </div>
+                        <div class="checkbox checkbox-tag5 tagCheckbox" id="checkbox5">
+                            <input type="checkbox" name="tag" value="html" onclick="updateTag('html')">
+                            <label for="checkbox5"> HTML</label>
+                        </div>
+                            <button type="button" class="btn btn-default" name="tag" id="selectAllTags" onclick="updateTag('all')"> Select All Tags</button>
+                    </form>
+                    <br>
+                    <h4>Region Filter</h4>
+                    <form role="form">
+                        <div class="checkbox checkbox-africa" id="checkbox5">
+                            <input type="checkbox" name="tag" value="Africa" checked onclick="updateRegion('Africa')">
+                            <label for="checkbox6"> Africa</label>
+                        </div>
+                        <div class="checkbox checkbox-america" id="checkbox6">
+                            <input type="checkbox" name="tag" value="America" checked onclick="updateRegion('America')"> 
+                            <label for="checkbox7">America</label>
+                        </div>
+                        <div class="checkbox checkbox-asia" id="checkbox7">
+                            <input type="checkbox" name="tag" value="Asia" checked onclick="updateRegion('Asia')">
+                            <label for="checkbox7"> Asia</label>
+                        </div>
+                        <div class="checkbox checkbox-europe" id="checkbox8">
+                            <input type="checkbox" name="tag" value="Europe" checked onclick="updateRegion('Europe')">
+                            <label for="checkbox8"> Europe</label>
+                        </div>
+                        <div class="checkbox checkbox-oceania" id="checkbox9">
+                            <input type="checkbox" name="tag" value="Oceania" checked onclick="updateRegion('Oceania')">
+                            <label for="checkbox8"> Oceania</label>
+                        </div>
+                    </form>
+                </div>
+                <h3>Tags from Posts</h3>
+                <div class="col-xs-6" id="chart"></div>
+                
+                <div class="radarChart col-xs-5"></div>
+        </div>
+    </section>
+	<section  class="about-section" id="scatter">
+    <div id="scatter">
+        <div class="col-xs-1 scatterBtns dashboard">
+            <h4>Data Type</h4>
+        	<span class="btn btn-default selected" id="questions">Questions</span>
+        	<span class="btn btn-default" id="answers">Answers</span>
+        	<span class="btn btn-default" id="QA">QA</span>
+        	<span class="btn btn-default" id="top" style="margin-bottom:30px;">Top Users</span>
+            <br>
+            <h4>Region Filter</h4>
+            <form role="form">
+                <div class="checkbox checkbox-africa" id="checkbox5">
+                    <input type="checkbox" name="tag" value="Africa" checked onclick="updateRegion('Africa')">
+                    <label for="checkbox6"> Africa</label>
+                </div>
+                <div class="checkbox checkbox-america" id="checkbox6">
+                    <input type="checkbox" name="tag" value="America" checked onclick="updateRegion('America')"> 
+                    <label for="checkbox7">America</label>
+                </div>
+                <div class="checkbox checkbox-asia" id="checkbox7">
+                    <input type="checkbox" name="tag" value="Asia" checked onclick="updateRegion('Asia')">
+                    <label for="checkbox7"> Asia</label>
+                </div>
+                <div class="checkbox checkbox-europe" id="checkbox8">
+                    <input type="checkbox" name="tag" value="Europe" checked onclick="updateRegion('Europe')">
+                    <label for="checkbox8"> Europe</label>
+                </div>
+                <div class="checkbox checkbox-oceania" id="checkbox9">
+                    <input type="checkbox" name="tag" value="Oceania" checked onclick="updateRegion('Oceania')">
+                    <label for="checkbox8"> Oceania</label>
+                </div>
+            </form>
+        </div>
+    	<div class="row noPadding" id="geomapAndScatter">
+            <h3 id="scatterTitle" style="padding-bottom:10px;">Number of Questions per Country</h3>
+            <div class="geomap col-xs-6 noPadding"></div>
+            <div class="scatterPlot noPadding"></div>
+        </div>
+    </div>
+	</section>
+	
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+    <script src="js/radarChart.js" type="text/javascript"></script>
+    <script src="js/scatterPlot.js" type="text/javascript"></script>
+    <script src="js/util.js" type="text/javascript"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+}
+
+.checkbox label{
+	margin-bottom: 10px;
+	font-size: large;
+}
+
+.radarForm{
+	text-align: left;
+	 padding-top:5%;
+}
+
+.radarChart{
+	font-size: large;
+  padding-top: 3%;
+}
+			
+.legend {
+	font-family: 'Raleway', sans-serif;
+	fill: #333333;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #000;
+}
+
+.tooltip {
+  padding-left:10px;
+  padding-right:10px;
+  padding-bottom:5px;
+  padding-top:3px;
+  position: absolute;
+  height: 85px;
+  pointer-events: none;
+  border-style: solid;
+  border-color: #ffffff;
+  color: white;
+}
+
+.selected {
+  background-color: #828282;
+}
+
+.noPadding {
+  padding: 0;
+  margin: 0;
+}
+
+.scatterPlot {
+  text-align: middle;
+}
+
+body {
+  overflow: hidden;
+}
+
+.dashboard
+{
+  float: left;
+  text-align: left;
+  padding-left: 40px;
+  padding-top:30px;
+}
+
+.navbar, .navbar-default, .dashboard, .navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
+  background-color: #494949;
+  color:#F8F8F8;
+  border:none;
+}
+
+a.navbar-brand.page-scroll:hover, .navbar-default .navbar-nav>li>a:hover {
+  color: #494949;
+  background-color:#F8F8F8;
+}
+
+.dashboard, #radar, #scatter {
+  height: 101.7%;
+}
+
+.scatterBtns span {
+  width: 92px;
+  margin-bottom: 5px;
+}
+
+
+#selectAllTags
+{
+  padding: 5px;
+}
+
+div#geomapAndScatter {
+  padding-top: 3%;
+}
+
+.bg-image-blur {
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+    filter: blur(20px);
+}

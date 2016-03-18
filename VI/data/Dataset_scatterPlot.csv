@@ -1,0 +1,150 @@
+id,country,questions,answers,QA,users,region,top
+AFG,Afghanistan,812,957,8,156,Asia,0
+ALB,Albania,829,2371,48,233,Europe,0
+DZA,Algeria,1777,2790,22,453,Africa,0
+AND,Andorra,14,53,58,13,Europe,0
+ATA,Antarctica,572,730,12,35,America,0
+ARG,Argentina,14977,47364,52,3748,America,1
+ARM,Armenia,3698,8467,39,466,Europe,0
+AUS,Australia,94158,348151,57,15409,Oceania,15
+AUT,Austria,19745,73433,58,3588,Europe,3
+AZE,Azerbaijan,2104,2990,17,278,Europe,0
+BHS,Bahamas,103,105,1,23,America,0
+BHR,Bahrain,621,1262,34,135,Asia,0
+BGD,Bangladesh,13514,38713,48,4210,Asia,0
+BRB,Barbados,63,58,-4,28,America,0
+BLR,Belarus,8517,32486,58,2037,Europe,1
+BEL,Belgium,33030,95317,49,5571,Europe,7
+BEN,Benin,80,34,-40,16,Africa,0
+BTN,Bhutan,67,82,10,21,Asia,0
+BOL,Bolivia,1195,2294,31,256,America,0
+BIH,Bosnia and Herzegovina,2589,5815,38,365,Europe,0
+BWA,Botswana,129,52,-43,50,Africa,0
+BRA,Brazil,52278,112061,36,15594,America,10
+BGR,Bulgaria,10815,64133,71,2170,Europe,1
+KHM,Cambodia,2197,4063,30,347,Asia,0
+CMR,Cameroon,312,312,0,103,Africa,0
+CAN,Canada,139324,421914,50,22184,America,14
+USA,Caribbean,41,106,44,14,America,0
+RCH,Chile,5021,14523,49,1650,America,1
+CHN,China,52582,95656,29,20924,Asia,9
+COL,Colombia,6151,13858,39,1846,America,1
+CRI,Costa Rica,1997,4754,41,654,America,1
+HRV,Croatia,7344,25586,55,1383,Europe,0
+CUB,Cuba,1195,3302,47,234,America,0
+CYP,Cyprus,1644,5665,55,267,Europe,0
+CZE,Czech Republic ,20000,68877,55,3721,Europe,3
+DNK,Denmark,29357,84362,48,5024,Europe,2
+DOM,Dominican Republic,1803,3438,31,431,America,0
+ECU,Ecuador,1010,1908,31,405,America,0
+EGY,Egypt,13152,19830,20,2864,Africa,2
+SLV,El Salvador,1191,1571,14,175,America,0
+EST,Estonia,3846,13062,55,754,Europe,0
+ETH,Ethiopia,656,981,20,199,Africa,0
+FRO,Faroe Islands,71,96,15,16,Europe,0
+FJI,Fiji,196,405,35,46,Oceania,0
+FIN,Finland,11403,53988,65,2689,Europe,3
+FRA,France,77868,314814,60,16816,Europe,10
+GEO,Georgia,5843,13859,41,881,Europe,0
+DEU,Germany,148601,657636,63,26798,Europe,24
+GHA,Ghana,802,1256,22,324,Africa,0
+GRC,Greece,13365,45234,54,2744,Europe,1
+GTM,Guatemala,688,4388,73,328,America,0
+GUY,Guyana,68,20,-55,16,America,0
+USA,Hawaii,652,1518,40,159,America,0
+HND,Honduras,416,762,29,136,America,0
+HUN,Hungary,10735,41403,59,2562,Europe,5
+ISL,Iceland,1836,4113,38,428,Europe,0
+IND,India,539061,1134101,36,107911,Asia,34
+IDN,Indonesia,13119,19509,20,5223,Asia,2
+IRN,Iran,27935,41766,20,5257,Asia,4
+IRQ,Iraq,512,462,-5,225,Asia,0
+ISR,Israel,46481,130207,47,3953,Asia,4
+ITA,Italy,13041,35342,46,2475,Europe,3
+JAM,Jamaica,1607,700,-39,165,America,0
+JPN,Japan,12590,40806,53,3655,Asia,2
+JOR,Jordan,3693,8626,40,829,Asia,0
+KAZ,Kazakhstan,1514,2392,22,385,Asia,0
+KEN,Kenya,3819,4048,3,1039,Africa,1
+KWT,Kuwait,1034,4364,62,218,Asia,0
+KGZ,Kyrgyzstan,872,1894,37,125,Asia,0
+LVA,Latvia,5296,14313,46,887,Europe,2
+LBN,Lebanon,4780,8617,29,608,Asia,0
+LBY,Libya,385,151,-44,64,Africa,0
+LIE,Liechtenstein,48,120,43,16,Europe,0
+LTU,Lithuania,7090,14864,35,1146,Europe,1
+LUX,Luxembourg,1731,4670,46,273,Europe,2
+MKD,Macedonia,2362,4726,33,417,Europe,0
+MYS,Malaysia,11702,15087,13,2246,Asia,1
+MDV,Maldives,352,523,20,73,Asia,0
+MLT,Malta,3267,9591,49,355,Europe,0
+MRT,Mauritania,35,85,42,11,Africa,0
+MUS,Mauritius,1032,3390,53,164,Africa,0
+MEX,Mexico,11845,28323,41,4045,America,2
+MDA,Moldova,2494,5320,36,386,Europe,1
+MNG,Mongolia,427,424,0,160,Asia,0
+MNE,Montenegro,264,924,56,63,Europe,0
+MAR,Morocco,3542,6763,31,868,Africa,0
+MOZ,Mozambique,38,147,59,47,Africa,0
+MMR,Myanmar,1618,2640,24,329,Asia,0
+NAM,Namibia,147,167,6,49,Africa,0
+NPL,Nepal,8985,21300,41,1826,Asia,0
+NLD,Netherlands,65133,290726,63,12513,Europe,8
+NCL,New Caledonia,49,99,34,18,Oceania,0
+NZL,New Zealand,24472,90163,57,3748,Oceania,2
+NIC,Nicaragua,348,1168,54,105,America,1
+NGA,Niger,3632,5151,17,1284,Africa,0
+NOR,Norway,24278,77739,52,3870,Europe,8
+OMN,Oman,26551,81318,51,4516,Asia,4
+PAK,Pakistan,41317,75431,29,7424,Asia,2
+PSE,Palestinian,2026,2840,17,238,Asia,0
+PAN,Panama,405,568,17,196,America,0
+PRY,Paraguay,640,3382,68,221,America,1
+PER,Peru,2818,12358,63,737,America,0
+PHL,Philippines,21489,37776,27,4185,Asia,6
+POL,Poland,44903,145620,53,8613,Europe,7
+PRT,Portugal,19863,38926,32,3941,Europe,3
+PRI,Puerto Rico,815,921,6,264,America,0
+QAT,Qatar,748,2733,57,135,Asia,0
+COD,Republic of the Congo,26,87,54,22,Africa,0
+RUS,Russia,54651,178258,53,14254,Europe,12
+WSM,Samoa,4,8,33,3,Oceania,0
+SMR,San Marino,92,4526,96,14,Europe,0
+SAU,Saudi Arabia,2074,4226,34,599,Asia,1
+SEN,Senegal,71,602,79,59,Africa,1
+SRB,Serbia,7047,18740,45,1667,Europe,1
+SYC,Seychelles,13,4,-53,10,Africa,0
+SLE,Sierra Leone,3,2,-20,9,Africa,0
+SGP,Singapore,21139,50233,41,3272,Asia,2
+SVK,Slovakia,6958,22232,52,1176,Europe,0
+SVN,Slovenia,6364,19060,50,910,Europe,0
+ZAF,South Africa,30336,52861,27,4857,Africa,2
+KOR,South Korea,7987,13869,27,2755,Asia,0
+ESP,Spain,41020,115948,48,9598,Europe,7
+LKA,Sri Lanka,17405,31607,29,2737,Asia,0
+SDN,Sudan,92,380,61,91,Africa,0
+SWZ,Swaziland,42,48,7,17,Africa,0
+SWE,Sweden,51226,186451,57,8874,Europe,12
+CHE,Switzerland,29918,132298,63,4800,Europe,3
+SYR,Syria,1712,2325,15,306,Asia,1
+TWN,Taiwan,5836,9437,24,2053,Asia,1
+TJK,Tajikistan,269,210,-12,27,Asia,0
+TZA,Tanzania,591,430,-16,169,Africa,0
+THA,Thailand,5533,12438,38,1592,Asia,3
+TGO,Togo,14,11,-12,16,Africa,0
+TTO,Trinidad and Tobago,460,4598,82,78,America,0
+TUN,Tunisia,4856,7893,24,954,Africa,0
+TUR,Turkey,29277,53546,29,6586,Asia,5
+TKM,Turkmenistan,96,224,40,22,Asia,0
+UGA,Uganda,1167,1080,-4,333,Africa,0
+UKR,Ukraine,32169,87720,46,7696,Europe,5
+UAE,United Arab Emirates,6598,10630,23,1173,Asia,0
+GBR,United Kingdom,352778,1261919,56,47898,Europe,54
+USA,United States,995490,3447201,55,166929,America,174
+URY,Uruguay,2405,7258,50,672,America,1
+UZB,Uzbekistan,906,2310,44,198,Asia,0
+VEN,Venezuela,4034,6407,23,955,America,0
+VNM,Vietnam,7871,12502,23,2759,Asia,0
+YEM,Yemen,255,263,2,80,Asia,0
+ZMB,Zambia,68,32,-36,35,Africa,0
+ZWE,Zimbabwe,363,170,-36,142,Africa,0
