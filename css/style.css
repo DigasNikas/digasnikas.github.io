@@ -66,18 +66,17 @@ display:block;
   text-decoration: none;
 font-family: 'Jockey One', sans-serif;
 }
-.nav-right ul li:nth-child(2) a {
-  padding: 11px 90px;
-}
-.nav-right ul li:nth-child(1) a {
+
+.nav-right ul li a {
   padding: 11px 62px;
+  width: 226px;
+  display: block;
+  padding: 0;
+	text-align: center;
+	margin: 10px;
+	line-height: 2.5;
 }
-.nav-right ul li:nth-child(4) a {
-  padding: 11px 90px;
-}
-.nav-right ul li:nth-child(5) a {
-  padding: 11px 62px;
-}
+
 .nav-right ul li a:hover{
 	color:#323b43;
 	transition:.5s all;
