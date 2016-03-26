@@ -3,6 +3,36 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+
+	.nav-right {
+	  float: right;
+	  position: fixed;
+	  display: block;
+	  top: 0;
+	  left: 0;
+	  z-index: 100;
+	}
+
+		.nav-right ul li a {
+		  display:block;
+		  margin: 0;
+		  width: 25vw;
+		  float: left;
+		    color: #323b43;
+  font-size: 17px;
+  background: #fff;
+  font-weight: 600;
+  text-decoration: none;
+      text-align: center;
+    padding: 10px 0;
+		}
+
+
+	.nav-right ul li {
+	  line-height: 1.5em;
+	  display: table-cell;
+	}
+
 body{
 	margin:0;
 	padding:0;
@@ -41,23 +71,8 @@ margin-top:50px;
 .navigation {
   padding-top: 18px;
 }
-.nav-right ul {
-  padding: 0;
-  margin: 38px 0 0 0;
-}
-.nav-right ul li{
-display:block;
-  line-height: 4.2em;
-}
-.nav-right ul li a {
-  color: #323b43;
-  margin: 0px 0px;
-  font-size: 17px;
-  padding: 11px 104px;
-  background: #fff;
-  font-weight: 600;
-  text-decoration: none;
-}
+
+
 .nav-left a {
   font-size: 11em;
   font-weight: 600;
@@ -67,15 +82,6 @@ display:block;
 font-family: 'Jockey One', sans-serif;
 }
 
-.nav-right ul li a {
-  padding: 11px 62px;
-  width: 226px;
-  display: block;
-  padding: 0;
-	text-align: center;
-	margin: 10px;
-	line-height: 2.5;
-}
 
 .nav-right ul li a:hover{
 	color:#323b43;
@@ -657,22 +663,6 @@ color:#76b852;
 	.nav-left a {
 	  font-size: 8em;
 	  }
-	.nav-right ul li a {
-	  font-size: 15px;
-	  padding: 10px 70px;
-	  }
-	.nav-right ul {
-	  margin: 27px 0 0 0;
-	}
-	.nav-right ul li {
-	  line-height: 3.8em;
-	}
-	.nav-right ul li:nth-child(2) a ,.nav-right ul li:nth-child(4) a {
-	  padding: 10px 55px;
-	}
-	.nav-right ul li:nth-child(1) a,.nav-right ul li:nth-child(5) a {
-	  padding: 10px 45px;
-	}
 	.about,.our-skills,div#portfolio,.services,.news,.get-in-touch,.contact-us {
 	  padding: 60px 0;
 	}
@@ -753,22 +743,6 @@ color:#76b852;
 	}
 	.nav-left a {
 	  font-size: 7em;
-	}
-	.nav-right ul li a {
-	  font-size: 14px;
-	  padding: 8px 47px;
-	}
-	.nav-right ul li:nth-child(2) a ,.nav-right ul li:nth-child(4) a {
-	  padding: 8px 37px;
-	}
-	.nav-right ul li:nth-child(1) a,.nav-right ul li:nth-child(5) a {
-	  padding: 8px 27px;
-	}
-	.nav-right ul li {
-	  line-height: 3.5em;
-	}
-	.nav-right ul {
-	  margin: 23px 0 0 0;
 	}
 	.about, .our-skills, div#portfolio, .services, .news, .get-in-touch, .contact-us {
 	  padding: 50px 0;
@@ -898,22 +872,7 @@ color:#76b852;
 	.nav-left a {
 	  font-size: 7em;
 	}
-	.nav-right ul li a {
-	  font-size: 14px;
-	  padding: 8px 47px;
-	}
-	.nav-right ul li:nth-child(2) a ,.nav-right ul li:nth-child(4) a {
-	  padding: 8px 37px;
-	}
-	.nav-right ul li:nth-child(1) a,.nav-right ul li:nth-child(5) a {
-	  padding: 8px 27px;
-	}
-	.nav-right ul li {
-	  line-height: 3.5em;
-	}
-	.nav-right ul {
-	  margin: 23px 0 0 0;
-	}
+
 	.about, .our-skills, div#portfolio, .services, .news, .get-in-touch, .contact-us {
 	  padding: 50px 0;
 	}
@@ -1030,22 +989,6 @@ color:#76b852;
 	}
 	.navigation {
 	  padding-top: 0;
-	}
-	.nav-right ul {
-	  margin: 19px 0 0 0;
-	}
-	.nav-right ul li a {
-	  font-size: 13px;
-	  padding: 8px 30px;
-	}
-	.nav-right ul li:nth-child(2) a ,.nav-right ul li:nth-child(4) a {
-	  padding: 8px 20px;
-	}
-	.nav-right ul li:nth-child(1) a,.nav-right ul li:nth-child(5) a {
-	  padding: 8px 10px;
-	}
-	.nav-right ul li {
-	  line-height: 3.2em;
 	}
 	.about, .our-skills, div#portfolio, .services, .news, .get-in-touch, .contact-us {
 	  padding: 45px 0;
@@ -1182,20 +1125,8 @@ color:#76b852;
 	.nav-left a {
 	  font-size: 4em;
 	}
-	.nav-right ul {
-	  margin: 10px 0 0 0;
-	}
 	.banner-image img {
 	  width: 81%;
-	}
-	.nav-right ul li a {
-	  padding: 8px 11px;
-	}
-	.nav-right ul li:nth-child(2) a ,.nav-right ul li:nth-child(4) a {
-	  padding: 8px 7px;
-	}
-	.nav-right ul li:nth-child(1) a,.nav-right ul li:nth-child(5) a {
-	  padding: 8px 4px;
 	}
 	
 }
@@ -1220,37 +1151,8 @@ padding:0;
 		display:none;
 		background:#ced7df;
 		}
-	.nav-right ul.nav1 li {
-		display: inline-block;
-		text-align: center;
-		margin: 0;
-		width: 100%;
-		padding: 0px 0;
-		}
-	.nav-right ul {
-		  background:#ced7df;
-		  position: absolute;
-			padding: 0px 0;
-		  margin: 0;
-		  top:44px;
-		  left: 0%;
-		  width: 100%;
-		  z-index: 999;
-		  width: 100%;
-		}
-	.nav-right ul li a {
-		  display:block;
-		  margin:0px 0;
-		}
 
-	.nav-right {
-	   width: 12%;
-	  margin: 6px 0 0 0;
-	  float: right;
-	}
-	.nav-right ul li {
-	  line-height: 1.5em;
-	}
+
 	.banner-grids {
 	  margin-top: 20px;
 	}
