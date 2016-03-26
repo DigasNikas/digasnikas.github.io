@@ -296,7 +296,7 @@ width:57%;
 .about-info h4 {
   text-align: center;
   font-size: 17px;
-  color:#d9ffc4;
+  color:#247ba0;
   font-weight: 600;
   margin: 10px 0 16px 0;
   font-style: italic;
@@ -312,7 +312,7 @@ width:57%;
 .about-grid h4{
   font-family: 'Jockey One', sans-serif;
   text-align: left;
-  color: #d9ffc4;
+  color: #247ba0;
   font-size: 24px;
   text-transform: uppercase;
 }
@@ -332,7 +332,7 @@ padding:80px 0;
 .ser-head h3{
   font-family: 'Jockey One', sans-serif;
   margin: 0;
-  color: #247ba0;
+  color: #fff;
   font-size: 44px;
   text-align: center;
   font-weight: 400;
