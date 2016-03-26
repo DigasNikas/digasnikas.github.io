@@ -69,7 +69,7 @@ background:#ced7df;
 margin-top:50px;
 }
 .navigation {
-  padding-top: 18px;
+  margin-top: 20%;
 }
 
 
@@ -727,10 +727,6 @@ color:#76b852;
 	  }
 }
 @media (max-width: 800px){
-	.navigation {
-	  float: left;
-	  width: 30%;
-	}
 	.banner-image {
 	  float: left;
 	  width: 70%;
@@ -855,10 +851,6 @@ color:#76b852;
 	}
 }
 @media (max-width: 768px){
-	.navigation {
-	  float: left;
-	  width: 30%;
-	}
 	.banner-image {
 	  float: left;
 	  width: 70%;
@@ -986,9 +978,6 @@ color:#76b852;
 @media (max-width: 640px){
 	.nav-left a {
 	  font-size: 5.5em;
-	}
-	.navigation {
-	  padding-top: 0;
 	}
 	.about, .our-skills, div#portfolio, .services, .news, .get-in-touch, .contact-us {
 	  padding: 45px 0;
@@ -1122,9 +1111,6 @@ color:#76b852;
 	.contact-info textarea {
 	  height: 123px;
 	}
-	.navigation {
-	  padding: 0 10px;
-	}
 	.nav-left a {
 	  font-size: 4em;
 	}
@@ -1134,13 +1120,6 @@ color:#76b852;
 	
 }
 @media (max-width: 320px){
-
-
-.navigation {
-padding:0;
-  width: 100%;
-  text-align: center;
-}
 	ul.nav1{
 		background:#ced7df;
 		}
