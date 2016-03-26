@@ -1065,6 +1065,9 @@ color:#76b852;
 	}
 }
 @media (max-width: 480px){
+	.nav-right ul li a {
+	    font-size: 12px;
+	}
 	.about-info h3, .skill-info h2, .gallery h3, .ser-head h3, .news h3, .get-info h3 {
 	  font-size: 26px;
 	}
@@ -1131,24 +1134,14 @@ color:#76b852;
 	
 }
 @media (max-width: 320px){
+
+
 .navigation {
 padding:0;
   width: 100%;
   text-align: center;
 }
-	span.menu img{
-	width:98%;
-	}
-	span.menu {
-	   display: block;
-	  cursor: pointer;
-	  position: relative;
-	  text-align: right;
-  width: 100%;
-  margin: 0px 0 0px 0px;
-	}
 	ul.nav1{
-		display:none;
 		background:#ced7df;
 		}
 
