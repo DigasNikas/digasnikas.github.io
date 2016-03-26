@@ -232,7 +232,7 @@ width:57%;
 }
 
 .link--kumya:hover {
-	color: #fff;
+	color: #247ba0;
 }
 
 .link--kumya::after {
@@ -332,7 +332,7 @@ padding:80px 0;
 .ser-head h3{
   font-family: 'Jockey One', sans-serif;
   margin: 0;
-  color: #76b852;
+  color: #247ba0;
   font-size: 44px;
   text-align: center;
   font-weight: 400;
@@ -344,7 +344,7 @@ margin-top:50px;
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background:#76b852;
+  background:#247ba0;
   margin: 0 auto;
   text-align: center;
   position: relative;	
@@ -553,7 +553,7 @@ line-height:1.8em;
 	height:390px;
 	}
 .contact-us{
-  background:#76b852;
+  background:#247ba0;
 	padding: 80px 0 80px 0;
 	}
 .contact-grid p{
